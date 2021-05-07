@@ -1,0 +1,6 @@
+image: "rust:1.52.0-slim-bullseye"
+
+test:cargo:
+  script:
+    - rustc --version && cargo --version  # Print version info for debugging
+    - cargo test --workspace --verbose
